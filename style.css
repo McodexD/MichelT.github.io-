@@ -1,0 +1,195 @@
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: #001c2e;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: #001c2e;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px; /* Adjust this value for your preferred content width */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #001c2e;
+    color: #fff;
+}
+
+a {
+    color: #007ACC;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for fade-in animation */
+.about-item {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.about-item.fade-in {
+    opacity: 1;
+}
+/* CSS */
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the transparency here */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.website {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.website h3 {
+    margin-top: 10px;
+}
+
+.website p {
+    font-size: 0.9em;
+}
+
+.website a {
+    color: #007ACC;
+}
+
+.website a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for Animation */
+#animation {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+}
+
+.black-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.pic{
+    width: 110px;
+    height: 110px;
+    padding-left: 350px;
+    
+}
+    
+
+.black-box img {
+    max-width: 80px;
+}
+
+.moving-ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: moveBall 3s linear infinite, changeColor 6s linear infinite;
+}
+
+@keyframes moveBall {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}

@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+h2 {
+    color: aquamarine;
+}
+
+p {
+    color: aquamarine;
+}
+
+#about {
+    margin-top: 180px; /* Push the text lower */
+}
+
+/* Create a container for the image and text */
+.about-content {
+    display: flex; /* Display its contents in a row (horizontally) */
+    align-items: center; /* Vertically align contents in the center */
+    justify-content: space-between; /* Add space between the image and text */
+}
+
+/* Style for the image */
+.about-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin to the right of the image */
+    border: 2px solid aquamarine; /* Add a border */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Style for the text */
+.about-text {
+    color: aquamarine;
+}
